@@ -8,6 +8,14 @@ interface ProductProps {
     slug: string;
   };
 }
+export async function generateStaticParams() {
+  const response = await api("/products/featured");
+  const products: Product[] = await response.json();
+
+  return products.map((product) => {
+    return { slug: product.slug };
+  });
+}
 
 export async function generateMetadata({
   params,
