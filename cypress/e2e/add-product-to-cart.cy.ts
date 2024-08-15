@@ -36,3 +36,4 @@ describe("add product to cart", () => {
     cy.contains("Cart (1)").should("exist");
   });
 });
+``;
