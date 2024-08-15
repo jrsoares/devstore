@@ -9,7 +9,7 @@ interface CartItem {
 
 interface CartContextType {
   items: CartItem[];
-  addToCart: (productId: string) => void;
+  addToCart: (productId: number) => void;
 }
 
 const CartContext = createContext({} as CartContextType);
