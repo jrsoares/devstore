@@ -39,5 +39,6 @@ export default defineConfig({
         };
       });
     },
+    specPattern: "cypress/e2e/**/*.spec.{js,ts,jsx,tsx}",
   },
 });
