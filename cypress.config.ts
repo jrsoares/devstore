@@ -1,6 +1,7 @@
 import { defineConfig } from "cypress";
 // @ts-ignore
 import execa from "execa";
+
 const findBrowser = () => {
   // the path is hard-coded for simplicity
   const browserPath =
